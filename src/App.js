@@ -7,8 +7,8 @@ import { Signup } from './Signup';
 function App() {
   const [currentForm, setCurrentForm] = useState('signin');
 
-  const toggleForm = (forName) => {
-    setCurrentForm (forName);
+  const toggleForm = (formName) => {
+    setCurrentForm (formName);
   }
 
   return (
