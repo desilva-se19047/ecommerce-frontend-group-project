@@ -5,7 +5,7 @@ import ProductList from "./pages/ProductList";
 
 
 const App = () => {
-  return <Home/>;
+  return <Product/>;
 };
 
 export default App;
