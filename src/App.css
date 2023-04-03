@@ -19,7 +19,7 @@
 
 @media screen and (min-width: 600px) {
   .auth-form-container {
-    padding: 5rem;
+    padding: 1rem 3rem;
     border: 1px solid white;
     border-radius: 10px;
     margin: 0.5rem;
@@ -50,7 +50,7 @@ button {
 
 .link-btn {
   background: none;
-  margin: 0.1rem 0;
+  margin: 0.05rem 0;
   color: white;
   text-decoration: underline;
 }
