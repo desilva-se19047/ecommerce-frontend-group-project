@@ -50,6 +50,7 @@ button {
 
 .link-btn {
   background: none;
+  margin: 0.1rem 0;
   color: white;
   text-decoration: underline;
 }
