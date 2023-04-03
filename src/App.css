@@ -40,7 +40,7 @@ input {
 
 button {
   border: none;
-  background-color: white;
+  background-color: rgb(226, 214, 214);
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
