@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
@@ -16,7 +17,14 @@ import Addcat from "./pages/Addcat";
 import Addbrand from "./pages/Addbrand";
 import Addproduct from "./pages/Addproduct";
 import ViewOrder from "./pages/ViewOrder";
+import { Signin } from '.pages/Signin';
+import { Signup } from '.pages/Signup';
 function App() {
+  const [currentForm, setCurrentForm] = useState('signin');
+
+  const toggleForm = (formName) => {
+    setCurrentForm (formName);
+  }
   return (
     <Router>
       <Routes>
@@ -43,6 +51,15 @@ function App() {
       </Routes>
     </Router>
   );
+
+  return (
+    <div className="App">
+      {
+        currentForm === "signin" ? < Signin onFormSwitch={toggleForm} /> : < Signup onFormSwitch={toggleForm} />
+      }  
+    </div>
+  );
+  
 }
 
 export default App;
