@@ -17,8 +17,8 @@ import Addcat from "./pages/Addcat";
 import Addbrand from "./pages/Addbrand";
 import Addproduct from "./pages/Addproduct";
 import ViewOrder from "./pages/ViewOrder";
-import { Signin } from '.pages/Signin';
-import { Signup } from '.pages/Signup';
+import { Signin } from './pages/Signin';
+import { Signup } from './pages/Signup';
 function App() {
   const [currentForm, setCurrentForm] = useState('signin');
 
