@@ -27,13 +27,13 @@ export const sliderItems = [
       id: 1,
       img: "https://cdn.shopify.com/s/files/1/0167/6391/2292/products/19990Giant_face_2000x.jpg?v=1656996544",
       title: "CRICKET",
-      cat:"Cric",
+      cat:"CRICKET",
     },
     {
       id: 2,
       img: "https://m.media-amazon.com/images/I/51D6MA79EZL._SX300_SY300_QL70_FMwebp_.jpg",
       title: "FOOTBALL",
-      cat:"FOOT",
+      cat:"FOOTBALL",
     },
     {
       id: 3,
