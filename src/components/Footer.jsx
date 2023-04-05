@@ -127,7 +127,7 @@ const Footer = () => {
           <Phone style={{marginRight:"10px"}}/> +94 77 12 34 567
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> contact@sports.dev
+          <MailOutline style={{marginRight:"10px"}} /> sportystore@sports.dev
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
