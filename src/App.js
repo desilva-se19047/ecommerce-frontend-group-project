@@ -4,15 +4,35 @@ import Product from './pages/Product';
 import ProductList from './pages/ProductList';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route
+  Routes,
+  Route,
+  Redirect
 } from "react-router-dom";
 
 
 const App = () => {
   return (
-    <Home/>
-  )
+    <Router>
+      <Routes>
+
+      
+
+      <Route exact path="/" element={<Home />} />  
+      <Route path="/products/:category" element={<ProductList />} />
+      <Route path="/product/id" element={<Product />} />
+      <Route path="/cart" element={<Cart />} />
+      {/*
+      <Route path="/login"} >
+        {user ? Redirect to ="/"/ : <Login/>}
+      </Route>
+      <Route path="/register"} >
+        {user ? Redirect to ="/"/ : <Register/>}
+      </Route>
+      */
+      }
+      </Routes>
+    </Router>
+  );
 };
 
 export default App
