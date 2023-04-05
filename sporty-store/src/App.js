@@ -26,6 +26,13 @@ function App() {
     setCurrentForm (formName);
   }
   return (
+    <div className="App">
+      {
+        currentForm === "signin" ? 
+        < Signin onFormSwitch={toggleForm} /> : 
+        < Signup onFormSwitch={toggleForm} />
+      }  
+    
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
@@ -50,15 +57,9 @@ function App() {
         </Route>
       </Routes>
     </Router>
-  );
-
-  return (
-    <div className="App">
-      {
-        currentForm === "signin" ? < Signin onFormSwitch={toggleForm} /> : < Signup onFormSwitch={toggleForm} />
-      }  
     </div>
   );
+
   
 }
 
