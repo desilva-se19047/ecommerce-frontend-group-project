@@ -80,7 +80,7 @@ const Navbar = () => {
 
         <Center>
           <Logo>
-            RK SPORTS
+            SPORTY STORE
           </Logo>
         </Center>
         
