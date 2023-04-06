@@ -11,7 +11,7 @@ import Customers from "./pages/Customers";
 import Colorlist from "./pages/Colotlist";
 import Categorylist from "./pages/Categorylist";
 import Brandlist from "./pages/Brandlist";
-//import Productlist from "./pages/Productlist";
+import Productlist from "./pages/Productlist";
 import Addcolor from "./pages/Addcolor";
 import Addcat from "./pages/Addcat";
 import Addbrand from "./pages/Addbrand";
@@ -33,7 +33,8 @@ function App() {
         currentForm === "signin" ? 
         < Signin onFormSwitch={toggleForm} /> : 
         < Signup onFormSwitch={toggleForm} />
-      }  
+      }
+    
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
