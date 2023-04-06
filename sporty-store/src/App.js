@@ -17,8 +17,14 @@ import Addcat from "./pages/Addcat";
 import Addbrand from "./pages/Addbrand";
 import Addproduct from "./pages/Addproduct";
 import ViewOrder from "./pages/ViewOrder";
-import { Signin } from './pages/Signin';
-import { Signup } from './pages/Signup';
+import Home from "./pages/Home";
+import Signup from "./pages/Signup";
+import Signin from "./pages/Signin";
+import Product from "./pages/Product";
+import ProductList from "./pages/ProductList";
+import Cart from "./pages/Cart";
+
+
 
 function App() {
   const [currentForm, setCurrentForm] = useState('signin');
@@ -28,10 +34,14 @@ function App() {
   }
 
   return (
-    
-    
     <Router>
       <Routes>
+        <Route exact path="/" component={<Home/>} />
+        <Route path="/signin" component={<Signin/>} />
+        <Route path="/signup" component={<Signup/>} />
+        <Route path="/product" component={<Product/>} />
+        <Route path="/productlist" component={<ProductList/>} />
+        <Route path="/cart" component={<Cart/>} />
         <Route path="/" element={<Login />} />
         <Route path="/reset-password" element={<Resetpassword />} />
         <Route path="/forgot-password" element={<Forgotpassword />} />
