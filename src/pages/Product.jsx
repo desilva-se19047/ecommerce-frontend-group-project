@@ -5,6 +5,10 @@ import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import { Add, Remove } from '@mui/icons-material';
 import { mobile } from "../responsive";
+import {useLocation} from "react-router-dom";
+import { useState } from 'react';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 const Container = styled.div``;
 
@@ -119,6 +123,19 @@ const Button = styled.button`
 `;
 
 const Product = () => {
+  const location = useLocation();
+  const id = location.pathname.split("/")[2];
+  const [product, setProduct] = useState({});
+
+  useEffect(()=> {
+    const getProduct = async()=> {
+      try{
+        const res = axios.
+      }catch{}
+    }
+
+  },[id])
+
   return (
     <Container>
         <Navbar/>
