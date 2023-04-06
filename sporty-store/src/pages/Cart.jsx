@@ -1,9 +1,9 @@
-import React from 'react'
+//import React from 'react'
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
-import { Add, Remove } from "@mui/icons-material";
+import { Add, Remove } from "@material-ui/icons";
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
@@ -187,7 +187,7 @@ const Cart = () => {
                                 <ProductName><b>Product:</b> BaseBall Bat</ProductName>
                                 <ProductId><b>ID:</b> 10000001</ProductId>
                                 <ProductColor color="red"/>
-                                <ProductSize><b>Size:</b> M</ProductSize>
+                                
                             </Details>
                         </ProductDetail>
 
@@ -209,7 +209,7 @@ const Cart = () => {
                                 <ProductName><b>Product:</b> Cricket batt</ProductName>
                                 <ProductId><b>ID:</b> 20000010</ProductId>
                                 <ProductColor color="Blue"/>
-                                <ProductSize><b>Size:</b> L</ProductSize>
+                                
                             </Details>
                         </ProductDetail>
 
@@ -231,7 +231,7 @@ const Cart = () => {
                                 <ProductName><b>Product:</b> Tenis bat</ProductName>
                                 <ProductId><b>ID:</b> 30000300</ProductId>
                                 <ProductColor color="green"/>
-                                <ProductSize><b>Size:</b> S</ProductSize>
+
                             </Details>
                         </ProductDetail>
 
