@@ -66,10 +66,10 @@ const ProductList = () => {
                         <Option disabled>
                             Product
                         </Option>
-                        <Option> Bat </Option>
-                        <Option> Ball </Option>
-                        <Option> Helmet </Option>
-                        <Option> Gloves </Option>
+                        <Option> bat </Option>
+                        <Option> ball </Option>
+                        <Option> helmet </Option>
+                        <Option> gloves </Option>
                     </Select>   
     
                     <Select name="size" onChange={handleFilters}>
