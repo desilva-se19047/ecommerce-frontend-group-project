@@ -9,6 +9,7 @@ import {useLocation} from "react-router-dom";
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
+import { publicRequest } from '../requestMethods';
 
 const Container = styled.div``;
 
@@ -130,10 +131,11 @@ const Product = () => {
   useEffect(()=> {
     const getProduct = async()=> {
       try{
-        const res = axios.
+        const res = await publicRequest.get("/products/find"+id)
+        setProduct(res.data);
       }catch{}
-    }
-
+    };
+      getProduct()
   },[id])
 
   return (
@@ -143,33 +145,30 @@ const Product = () => {
 
             <Wrapper>
                 <ImgContainer>
-                    <Image src="https://dac8r2vkxfv8c.cloudfront.net/images/products/d355-01-22-marucci-cat-connect--11-usa-baseball-bat--msbcc11usa-33432-1_l.jpg"/>
+                    <Image src={product.img}/>
                 </ImgContainer>
 
                 <InfoContainer>
-                    <Title>Baseball Bat</Title>
+                    <Title>{product.title}</Title>
                     <Desc>
-                    ad o0 aijf sionai f0i9j a[0ji9j mawoirj[i ami
-                    ao awio0fio mawof ma faf a w asf af sdfsdf as
-                    as afsaf asf asf saf  fsf asfa ge e
+                      {product.desc}
                     </Desc>
-                    <Price>$ 20</Price>
+                    <Price>$ {product.price}</Price>
 
                     <FilterContainer>
                         <Filter>
                             <FilterTitle>Color</FilterTitle>
-                            <FilterColor color="green"/>
-                            <FilterColor color="blue"/>
-                            <FilterColor color="yellow"/>
+                            {product.color.map((c) => (
+                                <FilterColor color={c} key={c}/>
+                            ))}    
                         </Filter>
+
                         <Filter>
                             <FilterTitle>Size</FilterTitle>
                             <FilterSize>
-                                <FilterSizeOption>XS</FilterSizeOption>
-                                <FilterSizeOption>S</FilterSizeOption>
-                                <FilterSizeOption>M</FilterSizeOption>
-                                <FilterSizeOption>L</FilterSizeOption>
-                                <FilterSizeOption>XL</FilterSizeOption>
+                             {product.size.map((s) => (
+                              <FilterSizeOption key={s}>{s}</FilterSizeOption>
+                            ))}
                             </FilterSize>
                         </Filter>
                     </FilterContainer>
