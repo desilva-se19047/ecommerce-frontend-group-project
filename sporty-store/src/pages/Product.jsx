@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Announcement from '../components/Announcement';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
-import { Add, Remove } from '@mui/icons-material';
+import { Add, Remove } from '@material-ui/icons';
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
@@ -144,16 +144,6 @@ const Product = () => {
                             <FilterColor color="green"/>
                             <FilterColor color="blue"/>
                             <FilterColor color="yellow"/>
-                        </Filter>
-                        <Filter>
-                            <FilterTitle>Size</FilterTitle>
-                            <FilterSize>
-                                <FilterSizeOption>XS</FilterSizeOption>
-                                <FilterSizeOption>S</FilterSizeOption>
-                                <FilterSizeOption>M</FilterSizeOption>
-                                <FilterSizeOption>L</FilterSizeOption>
-                                <FilterSizeOption>XL</FilterSizeOption>
-                            </FilterSize>
                         </Filter>
                     </FilterContainer>
                     
