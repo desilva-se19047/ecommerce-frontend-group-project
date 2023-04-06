@@ -89,16 +89,16 @@ const Footer = () => {
           </Desc>
 
           <SocialContainer>
-              <SocialIcon>
+              <SocialIcon color="3B5999">
                 <Facebook />
-              </SocialIcon>
-              <SocialIcon>
+              </SocialIcon >
+              <SocialIcon color="E4405F">
                 <Instagram />
               </SocialIcon>
-              <SocialIcon>
+              <SocialIcon color="55ACEE">
                 <Twitter />
               </SocialIcon>
-              <SocialIcon>
+              <SocialIcon color="E60023">
                 <Pinterest />
               </SocialIcon>
             </SocialContainer>
