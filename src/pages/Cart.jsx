@@ -6,6 +6,9 @@ import Footer from "../components/Footer";
 import { Add, Remove } from "@mui/icons-material";
 import { mobile } from "../responsive";
 import { useSelector } from 'react-redux';
+import StripeCheckout from "react-stripe-checkout";
+
+
 
 const Container = styled.div``;
 
