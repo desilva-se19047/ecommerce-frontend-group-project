@@ -11,7 +11,7 @@ import Customers from "./pages/Customers";
 import Colorlist from "./pages/Colotlist";
 import Categorylist from "./pages/Categorylist";
 import Brandlist from "./pages/Brandlist";
-import Productlist from "./pages/Productlist";
+import Itemlist from "./pages/Itemlist";
 import Addcolor from "./pages/Addcolor";
 import Addcat from "./pages/Addcat";
 import Addbrand from "./pages/Addbrand";
@@ -54,7 +54,7 @@ function App() {
           <Route path="list-brand" element={<Brandlist />} />
           <Route path="brand" element={<Addbrand />} />
           <Route path="brand/:id" element={<Addbrand />} />
-          <Route path="list-product" element={<Productlist />} />
+          <Route path="list-product" element={<Itemlist />} />
           <Route path="product" element={<Addproduct />} />
         </Route>
       </Routes>
