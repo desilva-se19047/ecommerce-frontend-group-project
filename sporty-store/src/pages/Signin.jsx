@@ -24,4 +24,6 @@ export const Signin = (props) => {
         </div>
     )
 
-}
+};
+
+export default Signin;
