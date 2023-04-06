@@ -1,4 +1,4 @@
-import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined} from "@mui/icons-material";
+import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined} from "@material-ui/core";
 import styled from "styled-components";
 
 const Info = styled.div`
