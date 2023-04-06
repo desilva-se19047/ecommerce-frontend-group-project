@@ -148,7 +148,12 @@ const Product = () => {
     } else {
       setQuantity(quantity+1)
     }
-  }
+  };
+
+  const handleClick = ()=>{
+
+    
+  };
 
   return (
     <Container>
@@ -191,7 +196,7 @@ const Product = () => {
                             <Amount>{quantity}</Amount>
                             <Add onClick={()=>handleQuantity("inc")}/>
                         </AmountContainer>
-                        <Button>ADD TO CART</Button>
+                        <Button onClick={handleClick}>ADD TO CART</Button>
                     </AddContainer>
 
                 </InfoContainer>
