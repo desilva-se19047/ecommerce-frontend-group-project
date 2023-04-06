@@ -34,7 +34,6 @@ function App() {
         < Signin onFormSwitch={toggleForm} /> : 
         < Signup onFormSwitch={toggleForm} />
       }  
-    
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
