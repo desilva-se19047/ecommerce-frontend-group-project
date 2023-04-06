@@ -1,3 +1,5 @@
+//import styled from "styled-components";
+//import { mobile } from "../responsive";
 import React, { useState } from "react";
 
 export const Signup = (props) => {
@@ -30,3 +32,5 @@ export const Signup = (props) => {
         </div>
     )
 }
+
+export default Signup;
