@@ -28,7 +28,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="Load">
       {
         currentForm === "signin" ? 
         < Signin onFormSwitch={toggleForm} /> : 
