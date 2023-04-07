@@ -40,7 +40,7 @@ const ProductCard = (props) => {
             <img src={volley2} className="img-fluid" alt="product image" />
           </div>
           <div className="product-details">
-            <h6 className="brand">addidas</h6>
+            <h6 className="brand">Adidas</h6>
             <h5 className="product-title">
                 Browse our wide selection of adidas accessories            </h5>
             <ReactStars
