@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/ProductCards";
 import ReactImageZoom from "react-image-zoom";
 import Color from "../components/Color";
 import { TbGitCompare } from "react-icons/tb";

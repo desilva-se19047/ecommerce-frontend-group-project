@@ -5,7 +5,7 @@ import prodcompare from "../images/prodcompare.svg";
 import wish from "../images/wish.svg";
 import wishlist from "../images/wishlist.svg";
 import volley from "../images/volley.jpg";
-import volley2 from "../images/volly-1.avif";
+import volley2 from "../images/volley-1.avif";
 import addcart from "../images/add-cart.svg";
 import view from "../images/view.svg";
 const ProductCard = (props) => {
