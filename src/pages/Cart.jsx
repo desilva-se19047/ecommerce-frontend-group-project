@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Announcement from "../components/Announcement";
@@ -7,6 +7,7 @@ import { Add, Remove } from "@mui/icons-material";
 import { mobile } from "../responsive";
 import { useSelector } from 'react-redux';
 import StripeCheckout from "react-stripe-checkout";
+import { userRequest } from "../requestMethods";
 
 const KEY = process.env.REACT_APP_STRIPE;
 
@@ -168,7 +169,27 @@ const Button = styled.button`
 
 const Cart = () => {
 
-  const cart = useSelector(state=>state.cart)
+  const cart = useSelector(state=>state.cart);
+  const [stripeToken, setStripeToken] = useState(null)
+  const history = useHistory()
+
+  const onToken = (token)=>{
+    setStripeToken(token);
+  };
+
+  useEffect(()=>{
+      const makeRequest = async ()=>{
+        try{
+            const res = await userRequest.post("/checkout/payment",{
+              tokenId: stripeToken.id,
+              amount: cart.total *100,              
+            });
+            history.push("/success",{data:res.data});
+        }catch{}
+      };
+     stripeToken && makeRequest();
+    },[stripeToken, cart.total, history]);
+
 
   return (
     <Container>
@@ -240,9 +261,19 @@ const Cart = () => {
                         <SummaryItemText>Total</SummaryItemText>
                         <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
                     </SummaryItem>
+                    <StripeCheckout
+                      name ="SPORTY STORE"
+                      image=''
+                      billingAddress
+                      shippingAddress
+                      description={`Your total is $${cart.total}`}
+                      amount={cart.total*100}
+                      token={onToken}
+                      stripeKey={KEY}>
+                    
 
                     <Button>CHECKOUT NOW</Button>
-
+                    </StripeCheckout>
                     
                 </Summary>
             </Bottom>
