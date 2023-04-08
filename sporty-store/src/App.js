@@ -24,7 +24,7 @@ import Checkout from "./pages/Checkout";
 
 function App() {
   return (
-    <>
+    <> 
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
