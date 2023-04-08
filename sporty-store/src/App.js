@@ -46,53 +46,53 @@ function App() {
     <>
       <BrowserRouter>
 
-        <Routes>
+          <Routes>
 
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="product" element={<OurStore />} />
-            <Route path="product/:id" element={<SingleProduct />} />
-            <Route path="blogs" element={<Blog />} />
-            <Route path="blog/:id" element={<SingleBlog />} />
-            <Route path="cart" element={<Cart />} />
-            <Route path="checkout" element={<Checkout />} />
-            <Route path="compare-product" element={<CompareProduct />} />
-            <Route path="wishlist" element={<Wishlist />} />
-            <Route path="signgin" element={<Signin />} />
-            <Route path="forgot-password" element={<Forgotpass />} />
-            <Route path="signup" element={<Signup />} />
-            <Route path="reset-password" element={<Resetpass />} />
-            <Route path="privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="refund-policy" element={<RefundPloicy />} />
-            <Route path="shipping-policy" element={<ShippingPolicy />} />
-            <Route path="term-conditions" element={<TermAndContions />} />
-          </Route>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="product" element={<OurStore />} />
+              <Route path="product/:id" element={<SingleProduct />} />
+              <Route path="blogs" element={<Blog />} />
+              <Route path="blog/:id" element={<SingleBlog />} />
+              <Route path="cart" element={<Cart />} />
+              <Route path="checkout" element={<Checkout />} />
+              <Route path="compare-product" element={<CompareProduct />} />
+              <Route path="wishlist" element={<Wishlist />} />
+              <Route path="signgin" element={<Signin />} />
+              <Route path="user-forgot-password" element={<Forgotpass />} />
+              <Route path="signup" element={<Signup />} />
+              <Route path="user-reset-password" element={<Resetpass />} />
+              <Route path="privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="refund-policy" element={<RefundPloicy />} />
+              <Route path="shipping-policy" element={<ShippingPolicy />} />
+              <Route path="term-conditions" element={<TermAndContions />} />
+            </Route>
 
-          <Route path="/adminpanel" element={<Login />} />
-            <Route path="/reset-password" element={<Resetpassword />} />
-            <Route path="/forgot-password" element={<Forgotpassword />} />
-            <Route path="/admin" element={<MainLayout />}>
-            <Route index element={<Dashboard />} />
-            <Route path="orders" element={<Orders />} />
-            <Route path="order/:id" element={<ViewOrder />} />
-            <Route path="customers" element={<Customers />} />
-            <Route path="list-color" element={<Colorlist />} />
-            <Route path="color" element={<Addcolor />} />
-            <Route path="color/:id" element={<Addcolor />} />
-            <Route path="list-category" element={<Categorylist />} />
-            <Route path="category" element={<Addcat />} />
-            <Route path="category/:id" element={<Addcat />} />
-            <Route path="list-brand" element={<Brandlist />} />
-            <Route path="brand" element={<Addbrand />} />
-            <Route path="brand/:id" element={<Addbrand />} />
-            <Route path="list-product" element={<Productlist />} />
-            <Route path="product" element={<Addproduct />} />
-          </Route>
+            <Route path="/adminpanel" element={<Login />} />
+              <Route path="/admin-reset-password" element={<Resetpassword />} />
+              <Route path="/admin-forgot-password" element={<Forgotpassword />} />
+              <Route path="/admin" element={<MainLayout />}>
+              <Route index element={<Dashboard />} />
+              <Route path="orders" element={<Orders />} />
+              <Route path="order/:id" element={<ViewOrder />} />
+              <Route path="customers" element={<Customers />} />
+              <Route path="list-color" element={<Colorlist />} />
+              <Route path="color" element={<Addcolor />} />
+              <Route path="color/:id" element={<Addcolor />} />
+              <Route path="list-category" element={<Categorylist />} />
+              <Route path="category" element={<Addcat />} />
+              <Route path="category/:id" element={<Addcat />} />
+              <Route path="list-brand" element={<Brandlist />} />
+              <Route path="brand" element={<Addbrand />} />
+              <Route path="brand/:id" element={<Addbrand />} />
+              <Route path="list-product" element={<Productlist />} />
+              <Route path="product" element={<Addproduct />} />
+            </Route>
 
-        </Routes>
-        
+          </Routes>
+
       </BrowserRouter>
     </>
   );
