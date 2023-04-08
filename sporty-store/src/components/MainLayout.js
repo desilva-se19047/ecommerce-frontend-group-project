@@ -20,7 +20,6 @@ import { BiCategoryAlt} from "react-icons/bi";
 import { Layout, Menu, theme } from "antd";
 import { useNavigate } from "react-router-dom";
 import './layout.css';
-import { replace } from "formik";
 
 const { Header, Sider, Content } = Layout;
 const MainLayout = () => {
@@ -42,7 +41,7 @@ const MainLayout = () => {
           defaultSelectedKeys={[""]}
           onClick={({ key }) => {
             if (key == "signout") {
-              navigate('/admin', { replace: true });
+              navigate('/');
             } else {
               navigate(key);
             }

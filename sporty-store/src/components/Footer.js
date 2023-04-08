@@ -112,7 +112,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <p className="text-center mb-0 text-white">
-                &copy; {new Date().getFullYear()}; Powered by Developer's Corner
+                &copy; {new Date().getFullYear()}; Powered by Sporty-Store
               </p>
             </div>
           </div>
