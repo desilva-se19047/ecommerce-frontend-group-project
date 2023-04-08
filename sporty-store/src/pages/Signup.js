@@ -20,7 +20,7 @@ const Signup = () => {
                 <CustomIn type="tel" name="mobile" placeholder="Mobile Number" />
                 <CustomIn type="user name" name="user name" placeholder="User Name" />
                 <CustomIn type="password" name="password" placeholder="Password" />
-                <CustomIn type="password" name="confirm password" placeholder="Password" />
+                <CustomIn type="password" name="confirm password" placeholder="Confirm Password" />
                 <div>
                   <div className="mt-3 d-flex justify-content-center gap-15 align-items-center">
                     <button className="button border-0">Sign Up</button>
