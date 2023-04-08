@@ -66,7 +66,7 @@ const SingleProduct = () => {
               </div>
               <div>
                 <img
-                  src="images/base.jpg"
+                  src="images/ball.jpg"
                   className="img-fluid"
                   alt=""
                 />
@@ -173,7 +173,7 @@ const SingleProduct = () => {
                     href="javascript:void(0);"
                     onClick={() => {
                       copyToClipboard(
-                        "images/base.jpg"
+                        "images/ball.jpg"
                       );
                     }}
                   >

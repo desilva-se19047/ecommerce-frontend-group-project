@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
-//import ProductCard from "../components/ProductCard";
-//import SpecialProduct from "../components/SpecialProduct";
 import Container from "../components/Container";
 import { services } from "../utils/Data";
 
@@ -15,16 +13,18 @@ const Home = () => {
           <div className="col-6">
             <div className="main-banner position-relative ">
               <img
-                src="images/main-banner-1.jpg"
+                src="images/main-banner.jpg"
                 className="img-fluid rounded-3"
                 alt="main banner"
               />
+            
               <div className="main-banner-content position-absolute">
-                <h4>SUPERCHARGED FOR PROS.</h4>
+                <h4>SUPERCHARGED FOR your choice.</h4>
                 <h5>Lether Ball.</h5>
                 <p>From $9</p>
                 <Link className="button">BUY NOW</Link>
               </div>
+              
             </div>
           </div>
           <div className="col-6">
