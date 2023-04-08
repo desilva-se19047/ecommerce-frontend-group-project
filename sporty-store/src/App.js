@@ -9,10 +9,10 @@ import OurStore from "./pages/OurStore";
 import Blog from "./pages/Blog";
 import CompareProduct from "./pages/CompareProduct";
 import Wishlist from "./pages/Wishlist";
-import Login from "./pages/Login";
-import Forgotpassword from "./pages/Forgotpassword";
+//import Signin from "./pages/Signin";
+//import Forgotpass from "./pages/Forgotpass";
 import Signup from "./pages/Signup";
-import Resetpassword from "./pages/Resetpassword";
+//import Resetpass from "./pages/Resetpass";
 import SingleBlog from "./pages/SingleBlog";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPloicy from "./pages/RefundPloicy";
@@ -34,6 +34,11 @@ import Addcat from "./pages/Addcat";
 import Addbrand from "./pages/Addbrand";
 import Addproduct from "./pages/Addproduct";
 import ViewOrder from "./pages/ViewOrder";
+import Login from "./pages/Login";
+import Forgotpassword from "./pages/Forgotpassword";
+import Resetpassword from "./pages/Resetpassword";
+
+
 
 
 function App() {
