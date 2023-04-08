@@ -16,7 +16,7 @@ const SingleProduct = () => {
     height: 600,
     zoomWidth: 600,
 
-    img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
+    img: "images/base.jpg",
   };
 
   const [orderedProduct, setorderedProduct] = useState(true);
@@ -45,28 +45,28 @@ const SingleProduct = () => {
             <div className="other-product-images d-flex flex-wrap gap-15">
               <div>
                 <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                  src="images/base.jpg"
                   className="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                  src="images/base.jpg"
                   className="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                  src="images/base.jpg"
                   className="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                  src="images/ball.jpg"
                   className="img-fluid"
                   alt=""
                 />
@@ -173,7 +173,7 @@ const SingleProduct = () => {
                     href="javascript:void(0);"
                     onClick={() => {
                       copyToClipboard(
-                        "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                        "images/ball.jpg"
                       );
                     }}
                   >

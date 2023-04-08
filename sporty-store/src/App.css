@@ -1,10 +1,19 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 :root {
+  --color-212529: #212529;
+  --color-ffd333: #ffd333;
+  --color-47ad24: #47ad24;
+  --color-e52e2e: #e52e2e;
+  --color-828599: #828599;
+  --color-3d464d: #ed464d;
+  --color-c3d4da: #ced4da;
   --color-131921: #131921;
   --color-3b4149: #3b4149;
   --color-febd69: #febd69;
@@ -15,6 +24,104 @@
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
 }
+
+.green {
+  color: var(--color-47ad24);
+  font-size: 14px;
+  font-family: Roboto !important;
+}
+.red {
+  color: var(--color-212529);
+  font-size: 14px;
+  font-family: Roboto !important;
+}
+.quill {
+  background-color: white;
+}
+
+.form-control {
+  box-shadow: none;
+  border-color: var(--color-c3d4da);
+}
+.title {
+  font: 28px;
+  font-family: Roboto !important;
+  color: var(--color-212529);
+}
+
+.sub-title {
+  font: 24px;
+  font-family: Roboto !important;
+  color: var(--color-212529);
+}
+.desc {
+  font: 14px;
+  font-family: Roboto !important;
+  color: var(--color-828599);
+}
+
+/* css for sign in sign up*/
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /*background-image: linear-gradient(79deg, #0b8b16, #40adb4 48%, #789c12);*/
+  background-image: url(./images/2.jpg);
+  background-size: cover;
+  ;
+}
+
+.auth-form-container, .signin-form, .signup-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 1rem 3rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: rgb(226, 214, 214);
+  padding: 20px;
+  margin: 2rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #720d6d;
+}
+
+.link-btn {
+  background: none;
+  margin: 0.05rem 0;
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* css part for user pages*/
+
 .section-heading {
   font-size: 26px;
   line-height: 32px;
@@ -184,7 +291,8 @@ footer .input-group-text {
 
 /* home wrapper 2 */
 .home-wrapper-2 {
-  background-color: var(--color-f5f5f7);
+  background-image: url(./images/2.jpg);
+  background-size: cover;
 }
 
 /* home wrapper 2 ends */
@@ -733,7 +841,9 @@ footer .input-group-text {
 }
 /* Cart Page Ends here */
 
+
 /* Shippping Page */
+
 
 .total {
   font-size: 14px;

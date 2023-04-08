@@ -41,7 +41,7 @@ const MainLayout = () => {
           defaultSelectedKeys={[""]}
           onClick={({ key }) => {
             if (key == "signout") {
-              navigate('/')
+              navigate('/');
             } else {
               navigate(key);
             }
