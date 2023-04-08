@@ -71,9 +71,9 @@ function App() {
             </Route>
 
             <Route path="/adminpanel" element={<Login />} />
-              <Route path="/admin-reset-password" element={<Resetpassword />} />
-              <Route path="/admin-forgot-password" element={<Forgotpassword />} />
-              <Route path="/admin" element={<MainLayout />}>
+            <Route path="/admin-reset-password" element={<Resetpassword />} />
+            <Route path="/admin-forgot-password" element={<Forgotpassword />} />
+            <Route path="/admin" element={<MainLayout />}>
               <Route index element={<Dashboard />} />
               <Route path="orders" element={<Orders />} />
               <Route path="order/:id" element={<ViewOrder />} />
