@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import Container from "../components/Container";
-import CustomInput from "../components/CustomInput";
+import CustomIn from "../components/CustomIn";
 
 const Signin = () => {
   return (
