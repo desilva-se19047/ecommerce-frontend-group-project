@@ -60,6 +60,65 @@
   color: var(--color-828599);
 }
 
+/* css for sign in sign up*/
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /*background-image: linear-gradient(79deg, #0b8b16, #40adb4 48%, #789c12);*/
+  background-image: url(./images/2.jpg);
+  background-size: cover;
+  ;
+}
+
+.auth-form-container, .signin-form, .signup-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 1rem 3rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: rgb(226, 214, 214);
+  padding: 20px;
+  margin: 2rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #720d6d;
+}
+
+.link-btn {
+  background: none;
+  margin: 0.05rem 0;
+  color: white;
+  text-decoration: underline;
+}
+
 
 /* css part for user pages*/
 
@@ -232,7 +291,8 @@ footer .input-group-text {
 
 /* home wrapper 2 */
 .home-wrapper-2 {
-  background-color: var(--color-f5f5f7);
+  background-image: url(./images/2.jpg);
+  background-size: cover;
 }
 
 /* home wrapper 2 ends */
@@ -781,7 +841,9 @@ footer .input-group-text {
 }
 /* Cart Page Ends here */
 
+
 /* Shippping Page */
+
 
 .total {
   font-size: 14px;

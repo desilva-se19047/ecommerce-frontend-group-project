@@ -81,7 +81,7 @@ const Header = () => {
                   >
                     <img src={user} alt="user" />
                     <p className="mb-0">
-                      Log in or Sign up <br /> My Account
+                      Signin or Signup <br /> My Account
                     </p>
                   </Link>
                 </div>
