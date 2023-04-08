@@ -17,8 +17,8 @@ const Signin = () => {
             <div className="auth-card">
               <h3 className="text-center mb-3">Login</h3>
               <form action="" className="d-flex flex-column gap-15">
-                <CustomInput type="email" name="email" placeholder="Email" />
-                <CustomInput
+                <CustomIn type="email" name="email" placeholder="Email" />
+                <CustomIn
                   type="password"
                   name="password"
                   placeholder="Password"

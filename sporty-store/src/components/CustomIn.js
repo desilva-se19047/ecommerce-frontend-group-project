@@ -1,6 +1,6 @@
 import React from "react";
 
-const CustomInput = (props) => {
+const CustomIn = (props) => {
   const { type, name, placeholder, classname } = props;
   return (
     <div>
@@ -14,4 +14,4 @@ const CustomInput = (props) => {
   );
 };
 
-export default CustomInput;
+export default CustomIn;
